@@ -1,0 +1,16 @@
+<!-- mi_aplicacion/templates/mi_aplicacion/agregar_categoria.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Agregar Categoría</title>
+</head>
+<body>
+    <h2>Agregar Categoría</h2>
+    <form method="post" action="{% url 'agregar_categoria' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Guardar</button>
+    </form>
+</body>
+</html>

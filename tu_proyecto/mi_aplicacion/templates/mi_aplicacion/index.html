@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Inicio</title>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a mi sitio web</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'index' %}">Inicio</a></li>
+            <li><a href="{% url 'agregar_categoria' %}">Agregar Categoría</a></li>
+            <li><a href="{% url 'agregar_cliente' %}">Agregar Cliente</a></li>
+            <li><a href="{% url 'buscar' %}">Buscar</a></li>
+            <li><a href="{% url 'resultados_busqueda' %}">Resultados de Búsqueda</a></li>
+            <li><a href="{% url 'agregar_producto' %}">Agregar Producto</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>Contenido Principal</h2>
+        <p>Este es el contenido principal de la página de inicio.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Mi Aplicación</p>
+    </footer>
+</body>
+</html>

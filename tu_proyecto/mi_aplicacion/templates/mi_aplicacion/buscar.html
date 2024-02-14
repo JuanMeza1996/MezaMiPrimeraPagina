@@ -1,0 +1,17 @@
+<!-- mi_aplicacion/templates/mi_aplicacion/buscar.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Buscar</title>
+</head>
+<body>
+    <h2>Buscar</h2>
+    <form method="post" action="{% url 'buscar' %}">
+        {% csrf_token %}
+        <label for="termino_busqueda">Ingrese el término de búsqueda:</label>
+        <input type="text" name="termino_busqueda" id="termino_busqueda" required>
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>
